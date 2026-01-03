@@ -9,8 +9,8 @@ def emotion_detector_route():
     if not text:
         return "Invalid input! Please provide text to analyze.", 400
     result = emotion_detector(text)
-    if result is None:
-        return "Error processing text.", 500
+    if result is None or result['dominant_emotion'] is None:
+        return "Invalid text! Please try again!."
     response = f"For the given statement, the system response is 'anger': {result['anger']}, 'disgust': {result['disgust']}, 'fear': {result['fear']}, 'joy': {result['joy']}, 'sadness': {result['sadness']}. The dominant emotion is {result['dominant_emotion']}."
     return response
 
