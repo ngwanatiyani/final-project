@@ -27,11 +27,3 @@ The application analyzes input text and returns scores for five emotions: anger,
 3. Run the server: `python final_project/server.py`
 4. Access the application at `http://localhost:5000`
 
-## API Usage
-
-Send a POST request to `/emotionDetector` with form data `textToAnalyze` containing the text to analyze.
-
-Example response: "For the given statement, the system response is 'anger': 0.1, 'disgust': 0.0, 'fear': 0.2, 'joy': 0.5, 'sadness': 0.2. The dominant emotion is joy."
-
-Current Date and Time (UTC - YYYY-MM-DD HH:MM:SS formatted): 2026-01-06 10:41:34
-Current User's Login: ngwanatiyani
